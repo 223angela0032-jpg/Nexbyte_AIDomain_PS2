@@ -1,0 +1,302 @@
+[
+  {
+    "name": "State Merit Scholarship",
+    "organization": "Department of Higher Education",
+    "description": "Scholarship for meritorious students pursuing undergraduate education.",
+    "application_limit": 100,
+    "registration_start": "2026-06-01",
+    "registration_end": "2026-12-31",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/state-merit-scholarship",
+    "natural_language_rules": "Applicant must be studying in an undergraduate course. Applicant must have a family income of at most 300000 per year. Applicant must be a resident of Maharashtra.",
+    "rules": [
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "undergraduate",
+        "human_readable": "Applicant must be studying in an undergraduate course."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 300000,
+        "human_readable": "Family income must be at most ₹3,00,000."
+      },
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "human_readable": "Applicant must be a resident of Maharashtra."
+      }
+    ],
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "name": "SC Higher Education Support Scheme",
+    "organization": "Social Justice Department",
+    "description": "Financial assistance scheme for SC students pursuing higher education.",
+    "application_limit": 150,
+    "registration_start": "2026-07-01",
+    "registration_end": "2026-11-30",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/sc-higher-education",
+    "natural_language_rules": "Applicant must belong to SC category. Applicant must be studying in a higher education course. Annual family income must not exceed 250000. Applicant must be a resident of Maharashtra.",
+    "rules": [
+      {
+        "field": "category",
+        "operator": "equals",
+        "value": "SC",
+        "human_readable": "Applicant must belong to the SC category."
+      },
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "higher education",
+        "human_readable": "Applicant must be pursuing higher education."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "human_readable": "Family income must be at most ₹2,50,000."
+      },
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "human_readable": "Applicant must be a resident of Maharashtra."
+      }
+    ],
+    "required_documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Domicile Certificate",
+      "Aadhaar Card"
+    ]
+  },
+  {
+    "name": "Women in STEM Scholarship",
+    "organization": "Education and Skills Foundation",
+    "description": "Scholarship supporting female students pursuing science, technology, engineering and mathematics courses.",
+    "application_limit": 75,
+    "registration_start": "2026-05-15",
+    "registration_end": "2026-10-31",
+    "applications_enabled": true,
+    "official_url": "https://example.org/women-stem",
+    "natural_language_rules": "Applicant must be female. Applicant must be studying a STEM course. Family income must be at most 500000 per year.",
+    "rules": [
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "Female",
+        "human_readable": "Applicant must be female."
+      },
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "STEM",
+        "human_readable": "Applicant must be studying a STEM course."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 500000,
+        "human_readable": "Family income must be at most ₹5,00,000."
+      }
+    ],
+    "required_documents": [
+      "Income Certificate",
+      "Aadhaar Card",
+      "Birth Certificate",
+      "College ID"
+    ]
+  },
+  {
+    "name": "Rural Student Assistance Scheme",
+    "organization": "Rural Development Department",
+    "description": "Financial assistance for students from rural areas pursuing undergraduate education.",
+    "application_limit": 200,
+    "registration_start": "2026-04-01",
+    "registration_end": "2026-12-15",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/rural-student-assistance",
+    "natural_language_rules": "Applicant must be a resident of Maharashtra. Applicant must be studying an undergraduate course. Family income must be at most 400000.",
+    "rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "human_readable": "Applicant must be a resident of Maharashtra."
+      },
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "undergraduate",
+        "human_readable": "Applicant must be studying an undergraduate course."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 400000,
+        "human_readable": "Family income must be at most ₹4,00,000."
+      }
+    ],
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Aadhaar Card"
+    ]
+  },
+  {
+    "name": "First Generation College Student Grant",
+    "organization": "Higher Education Council",
+    "description": "Support grant for students entering higher education for the first time.",
+    "application_limit": 50,
+    "registration_start": "2026-08-01",
+    "registration_end": "2026-10-31",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/first-generation-grant",
+    "natural_language_rules": "Applicant must be studying in first year. Applicant must have a family income of at most 350000. Applicant must be a resident of Maharashtra.",
+    "rules": [
+      {
+        "field": "year",
+        "operator": "equals",
+        "value": 1,
+        "human_readable": "Applicant must be studying in the first year."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 350000,
+        "human_readable": "Family income must be at most ₹3,50,000."
+      },
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "human_readable": "Applicant must be a resident of Maharashtra."
+      }
+    ],
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Birth Certificate",
+      "Aadhaar Card"
+    ]
+  },
+  {
+    "name": "OBC Student Support Scholarship",
+    "organization": "Backward Classes Welfare Department",
+    "description": "Scholarship assistance for students belonging to the OBC category.",
+    "application_limit": 120,
+    "registration_start": "2026-06-15",
+    "registration_end": "2026-12-20",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/obc-student-support",
+    "natural_language_rules": "Applicant must belong to OBC category. Applicant must be studying in an undergraduate course. Annual family income must not exceed 300000.",
+    "rules": [
+      {
+        "field": "category",
+        "operator": "equals",
+        "value": "OBC",
+        "human_readable": "Applicant must belong to the OBC category."
+      },
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "undergraduate",
+        "human_readable": "Applicant must be studying in an undergraduate course."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 300000,
+        "human_readable": "Family income must be at most ₹3,00,000."
+      }
+    ],
+    "required_documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Marksheet"
+    ]
+  },
+  {
+    "name": "Engineering Excellence Scholarship",
+    "organization": "Technical Education Foundation",
+    "description": "Scholarship for students pursuing engineering with strong academic performance.",
+    "application_limit": 60,
+    "registration_start": "2026-07-15",
+    "registration_end": "2026-11-15",
+    "applications_enabled": true,
+    "official_url": "https://example.org/engineering-excellence",
+    "natural_language_rules": "Applicant must be studying engineering. Applicant must have a family income of at most 600000. Applicant must have completed at least the first year.",
+    "rules": [
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "engineering",
+        "human_readable": "Applicant must be studying engineering."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 600000,
+        "human_readable": "Family income must be at most ₹6,00,000."
+      },
+      {
+        "field": "year",
+        "operator": "greater_than_or_equal",
+        "value": 2,
+        "human_readable": "Applicant must have completed at least the first year."
+      }
+    ],
+    "required_documents": [
+      "Marksheet",
+      "Income Certificate",
+      "College ID",
+      "Aadhaar Card"
+    ]
+  },
+  {
+    "name": "Minority Student Education Assistance",
+    "organization": "Department of Minority Welfare",
+    "description": "Educational assistance for eligible students from minority communities.",
+    "application_limit": 100,
+    "registration_start": "2026-06-01",
+    "registration_end": "2026-12-01",
+    "applications_enabled": true,
+    "official_url": "https://example.gov.in/minority-education",
+    "natural_language_rules": "Applicant must be studying in an undergraduate course. Applicant must have an annual family income of at most 250000. Applicant must be a resident of Maharashtra.",
+    "rules": [
+      {
+        "field": "course",
+        "operator": "contains",
+        "value": "undergraduate",
+        "human_readable": "Applicant must be studying in an undergraduate course."
+      },
+      {
+        "field": "family_income",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "human_readable": "Family income must be at most ₹2,50,000."
+      },
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "human_readable": "Applicant must be a resident of Maharashtra."
+      }
+    ],
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Aadhaar Card",
+      "Marksheet"
+    ]
+  }
+]

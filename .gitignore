@@ -1,0 +1,35 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/
+
+# Database
+database/*.db
+
+# Uploaded user documents
+uploads/*
+!uploads/.gitkeep
+
+# Official source PDFs uploaded by admins
+source_documents/*
+!source_documents/.gitkeep
+
+# Vector database (regenerated from source_documents)
+vector_db/*
+!vector_db/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
